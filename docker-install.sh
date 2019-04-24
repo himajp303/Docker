@@ -9,7 +9,6 @@ installEngine() {
   sudo rm /var/cache/apt/archives/lock 2> /dev/null
   sudo dpkg --configure -a
   sudo apt-get -qq update
-
   sudo apt-get -qq install \
     apt-transport-https \
     curl \
