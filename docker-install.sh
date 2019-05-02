@@ -4,10 +4,10 @@ readonly DOCKER_EE_VERSION=$2
 
 installEngine() {
 
-  sudo rm /var/lib/dpkg/lock 2> /dev/null
-  sudo rm /var/lib/dpkg/lock-frontend 2> /dev/null
-  sudo rm /var/cache/apt/archives/lock 2> /dev/null
-  sudo dpkg --configure -a
+  #sudo rm /var/lib/dpkg/lock 2> /dev/null
+  #sudo rm /var/lib/dpkg/lock-frontend 2> /dev/null
+  #sudo rm /var/cache/apt/archives/lock 2> /dev/null
+  #sudo dpkg --configure -a
   sudo apt-get -qq update
   sudo apt-get -qq install \
     apt-transport-https \
